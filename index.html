@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Transition Design Game.ink</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="story-container">
+        <img id="story-image" src="images/Scene_1.jpeg" alt="Story Image">
+        <button id="continue-btn">Continue</button>
+    </div>
+
+    <div class="cover"></div>
+    
+    <div class="outerContainer" id="outerStoryContainer">
+        <h3 class="written-in-ink"><a href="https://www.inklestudios.com/ink">WRITTEN IN INK</a></h3>
+
+        <div id="controls" class="buttons">
+          <a id="rewind" title="Restart story from beginning">restart</a>
+          <a id="save" title="Save progress">save</a>
+          <a id="reload" title="Reload from save point">load</a>
+          <a id="theme-switch" title="Switch theme">theme</a>
+        </div>
+
+        <div id="story" class="container">
+            <div class="header">
+                <h1>Transition Design Game.ink</h1>
+                <h2 class="byline"></h2>
+            </div>
+            <div class="scoreMenu">
+                <h1>Month #</h1>
+                <h3 id="goal">Goal: </h3>
+                <h3 id="marketshare">Marketshare: </h3>
+                <h3 id="piracy">Piracy: </h3>
+                <h3 id="keys">Key Buying: </h3>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="ink.js"></script>
+    <script src="Transition Design Game.js"></script>
+    <script src="main.js"></script>
+    <script src="story.js"></script>
+</body>
+</html>
