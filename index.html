@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/d494442ff3ff850465c17bb1da387c5b?family=Out+of+Line+BB" rel="stylesheet">
 
 </head>
 
@@ -15,6 +16,21 @@
     <div class="story-container">
         <img id="story-image" src="images/Scene_1.jpeg" alt="Story Image">
         <button id="continue-btn">Continue</button>
+        <button id="back-btn">Back</button>
+
+        <!-- Add this button inside your comic-container -->
+        <button id="toggle-info-mode">Exit Info Mode</button>
+
+        <!-- Add this container for clickable hotspots -->
+        <div id="info-hotspots"></div>
+
+        <!-- Add this popup box for contextual info -->
+        <div id="info-popup">
+        <h3 id="popup-title"></h3>
+        <p id="popup-desc"></p>
+        <a id="popup-link" href="#" target="_blank">Learn more</a><br><br>
+        <button onclick="closeInfoPopup()">Close</button>
+</div>
     </div>
 
     <div class="cover"></div>
